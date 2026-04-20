@@ -4,11 +4,11 @@ graph TD
     IoT[IoT Devices]
     Admin[Admin Workstation]
 
-    subgraph Edge[Access Point / Router]
+    subgraph Edge["Access Point / Router"]
         WG[WireGuard VPN]
     end
 
-    subgraph DockerHost[Ubuntu Linux Server (Docker Host)]
+    subgraph DockerHost["Ubuntu Linux Server (Docker Host)"]
         PiHole[Pi-hole DNS]
         NPM[Nginx Proxy Manager]
         Paperless[Paperless-ngx]
@@ -18,7 +18,7 @@ graph TD
         LLMPower[LocalLLM Power Manager - WOL + SSH + Shutdown]
     end
 
-    subgraph AIHost[Debian GPU Local AI Machine]
+    subgraph AIHost["Debian GPU Local AI Machine"]
         Ollama[Ollama]
         Jupyter[Jupyter]
     end
